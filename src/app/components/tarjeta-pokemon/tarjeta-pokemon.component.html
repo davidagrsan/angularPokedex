@@ -1,0 +1,17 @@
+<div class="container seleccionado">
+    <div class="tarjeta" (click)="emitClick()">
+        <div class="pokeball-container">
+            <img src="../assets/img/pokeball-icon-red.png" class="pokeball-logo-tarjeta">
+        </div>
+        <div class="info-container">
+            <img [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/' + id + '.png'" class="pokemon-img">
+            <span>No. {{id}}</span>
+            <span> 
+                @if (data) {
+                {{data.name | titlecase}}
+                }
+            </span>
+        </div>
+
+    </div>
+</div>

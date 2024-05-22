@@ -1,0 +1,9 @@
+#container {
+    max-width: 450px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.background-photo-pokemon {
+    opacity: 50%;
+}

@@ -1,0 +1,41 @@
+.container {
+    isolation: isolate;
+}
+.container .tarjeta {
+    display: flex;
+    align-items: center;
+    outline: 1px solid black;
+    background-color: #f0f0f0;
+    border-bottom: 3px solid #3b3b3b;
+    gap: 1rem;
+}
+.container .pokeball-container {
+    background-color: #e1292b;
+    border-bottom: 3px solid #711516;
+    padding: 0.5em;
+}
+.container .pokeball-container img {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    filter: drop-shadow(2px 0 2px #711516) drop-shadow(-2px 0 2px #711516);
+}
+.container img.pokemon-img {
+    width: 40px;
+}
+.container .info-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.container .info-container span {
+    padding-top: 0.5em;
+}
+
+.container.seleccionado .tarjeta {
+    background-color: #711516 !important;
+    color: white;
+}
+.container.seleccionado .pokeball-container {
+    border: none !important;
+}

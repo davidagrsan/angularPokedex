@@ -1,0 +1,36 @@
+#container {
+    height: calc(100vh - 110px);
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+}
+
+app-tarjeta-pokemon {
+    position: relative;
+    cursor: pointer;
+}
+
+#tarjetas-container {
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+::ng-deep #tarjetas-container app-tarjeta-pokemon:first-child .container .tarjeta {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+::ng-deep #tarjetas-container app-tarjeta-pokemon:first-child .container .pokeball-container {
+    border-top-left-radius: 15px;
+}
+::ng-deep #tarjetas-container app-tarjeta-pokemon:last-child .container .tarjeta {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+::ng-deep #tarjetas-container app-tarjeta-pokemon:last-child .container .pokeball-container {
+    border-bottom-left-radius: 15px;
+}
+
+#loading {
+    max-height: 50px;
+    mix-blend-mode: darken;
+}
